@@ -1,6 +1,9 @@
 <script>
 while (true){
-const d = new Date();
-alert(d);
+fetch('https://raw.githubusercontent.com/AzlanCoding/browser-in-website/main/WorkNow.txt').then(response => response.text()).then(data => {
+  	// Do something with your data
+    let state = data;
+  	alert(state);
+    });
 }
 </script>
